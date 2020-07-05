@@ -10,6 +10,6 @@ jobs:
       - setup_remote_docker
       - run: |
           docker build -t qlin22/around .
-          docker login -u="$qlin22" -p="$Linqiao970613!"
+          docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
           docker push qlin22/around
 
